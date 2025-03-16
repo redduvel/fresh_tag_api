@@ -1,6 +1,2 @@
 .env
 venv/
-api/__pycache__/
-api/supabase_client.py
-api/server/__pycache__/
-api/auth/__pycache__/

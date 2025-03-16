@@ -1,6 +1,6 @@
 from flask import Flask
-from api.server.server import server_bp
-from api.auth.auth import auth_bp
+from app.server.server import server_bp
+from app.auth.auth import auth_bp
 
 def create_app():
     
