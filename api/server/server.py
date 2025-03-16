@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 from datetime import datetime
 import os
-from api.supabase_client import get_supabase_client
+from api.db.supabase_client import get_supabase_client
 
 server_bp = Blueprint('server', __name__, url_prefix='/api/server')
 
