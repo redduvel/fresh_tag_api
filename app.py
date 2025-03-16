@@ -4,7 +4,7 @@ from api import create_app
 
 load_dotenv()
 
-
+# Create the Flask application
 app = create_app()
 
 if __name__ == "__main__":
