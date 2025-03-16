@@ -11,7 +11,7 @@ def invite():
         return jsonify({'error': 'Email is required'}), 400
     
     supabase = get_supabase_client()
-    user = supabase.auth.admin.invite_user_by_email(email)
+    user = supabase.auth.admin.invite_user_by_email(email, options={'redirect_to': 'freshtag://auth'})
     if user is None:
         return jsonify({'error': 'Failed to invite user'}), 500
     
